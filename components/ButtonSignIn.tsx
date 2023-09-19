@@ -13,7 +13,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-export function ButtonSignUp() {
+export function ButtonSignIn() {
   const [open, setOpen] = useState(false);
 
   const onHadleClick = () => {
@@ -35,18 +35,18 @@ export function ButtonSignUp() {
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-2 items-center text-center gap-4">
             <Link
-              href="/owner/sign-in"
-              className="shadow-lg rounded-lg py-10 items-center font-medium hover:bg-slate-50"
-              onClick={onHadleClick}
-            >
-              Pemilik Kos
-            </Link>
-            <Link
               href="/tenant/sign-in"
               className="shadow-lg rounded-lg py-10 items-center font-medium hover:bg-slate-50"
               onClick={onHadleClick}
             >
               Pencari Kos
+            </Link>
+            <Link
+              href="/owner/sign-in"
+              className="shadow-lg rounded-lg py-10 items-center font-medium hover:bg-slate-50"
+              onClick={onHadleClick}
+            >
+              Pemilik Kos
             </Link>
           </div>
         </div>

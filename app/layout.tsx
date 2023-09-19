@@ -3,6 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 
+import { Toaster } from "@/components/ui/toaster";
+
 const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
@@ -25,6 +27,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <Header />
         {children}
+        <Toaster />
       </body>
     </html>
   );

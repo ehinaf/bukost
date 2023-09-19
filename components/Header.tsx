@@ -6,7 +6,7 @@ import { useState } from "react";
 import { ChevronDownIcon, ChevronRightIcon } from "lucide-react";
 
 import { navbarLinks } from "@/constant";
-import { ButtonSignUp } from "@/components/ButtonSignUp";
+import { ButtonSignIn } from "@/components/ButtonSignIn";
 
 interface ListMenuProps {
   children: React.ReactNode;
@@ -142,7 +142,7 @@ const Header = () => {
           ))}
         </ul>
       </nav>
-      <ButtonSignUp />
+      <ButtonSignIn />
     </header>
   );
 };
